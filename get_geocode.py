@@ -1,14 +1,15 @@
-import pprint
+from pprint import pprint
 import reverse_geocoder as rg
 from ripe.atlas.cousteau import ProbeRequest
 
 filters = {"country_code": "SE"}
 probes = ProbeRequest(**filters)
 
-probelist = []
+probe_id_list = []
 coordinatelist=[]
 for probe in probes:
     coordinatelist.append(probe['geometry']['coordinates'])
+    probe_id_list.append(probe['id'])
 
 flip_list=[]
 for coordinate in coordinatelist:
@@ -25,4 +26,9 @@ for dict in location:
         kommun = dict['admin2']
         location_list.append(kommun)
 
-pprint.pprint(location_list)
+keys = probe_id_list
+values = location_list
+
+newdict = {k: v for k, v in zip(keys, values)}
+
+pprint(newdict)
