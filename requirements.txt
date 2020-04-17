@@ -1,0 +1,14 @@
+certifi==2020.4.5.1
+chardet==3.0.4
+idna==2.9
+numpy==1.18.2
+pprint==0.1
+python-dateutil==2.8.1
+requests==2.23.0
+reverse-geocoder==1.5.1
+ripe.atlas.cousteau==1.4.2
+scipy==1.4.1
+six==1.14.0
+socketIO-client==0.7.2
+urllib3==1.25.9
+websocket-client==0.57.0
