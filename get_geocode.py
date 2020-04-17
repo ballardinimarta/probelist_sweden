@@ -29,6 +29,6 @@ for dict in location:
 keys = probe_id_list
 values = location_list
 
-newdict = {k: v for k, v in zip(keys, values)}
+location_dict = {k: v for k, v in zip(keys, values)}
 
-pprint(newdict)
+pprint(location_dict)

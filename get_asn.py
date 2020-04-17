@@ -6,12 +6,13 @@ from pprint import pprint
 filters = {"country_code": "SE"}
 probes = ProbeRequest(**filters)
 
-asnlist = []
+all_asn_list = []
 for probe in probes:
-    asnlist.append(probe['asn_v4'])
+    all_asn_list.append(probe['asn_v4'])
 
+not_none_asn_list =[]
 network_list = []
-for asn in asnlist:
+for asn in all_asn_list:
     if asn is not None:
         url = ("https://stat.ripe.net/data/as-overview/data.json?resource=AS%s" % asn)
 
@@ -21,6 +22,12 @@ for asn in asnlist:
 
         networkprovider = data['data']['holder']
 
-        network_list.append([asn , networkprovider])
+        network_list.append(networkprovider)
+        not_none_asn_list.append(asn)
 
-pprint(network_list)
+keys = not_none_asn_list
+values = network_list
+asn_dict = {k: v for k, v in zip(keys, values)}
+
+
+pprint(asn_dict)
