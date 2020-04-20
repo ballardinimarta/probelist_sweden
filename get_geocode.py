@@ -1,6 +1,7 @@
 from pprint import pprint
-import reverse_geocoder as rg
+from geopy.geocoders import Nominatim
 from ripe.atlas.cousteau import ProbeRequest
+
 
 filters = {"country_code": "SE"}
 probes = ProbeRequest(**filters)
@@ -13,18 +14,22 @@ for probe in probes:
 
 flip_list=[]
 for coordinate in coordinatelist:
-    lon=coordinate[0]
-    lat=coordinate[1]
-    coordinates= ((lat, lon))
+    lon=str(coordinate[0])
+    lat=str(coordinate[1])
+    coordinates= (lat + ', ' + lon)
     flip_list.append(coordinates)
+
+geolocator = Nominatim(user_agent="probelist_sweden", timeout=None)
+
 
 location_list=[]
 coordinates = flip_list
-location = rg.search(coordinates)
-for dict in location:
-    if 'admin2' in dict:
-        kommun = dict['admin2']
-        location_list.append(kommun)
+for coor in coordinates:
+    location = geolocator.reverse(coor)
+    if 'address' in location.raw:
+        if 'state' in location.raw['address']:
+            lan = location.raw['address']['state']
+            location_list.append(lan)
 
 keys = probe_id_list
 values = location_list
@@ -32,3 +37,6 @@ values = location_list
 location_dict = {k: v for k, v in zip(keys, values)}
 
 pprint(location_dict)
+
+
+
