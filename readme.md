@@ -14,7 +14,7 @@ $ python3 get_asn.py
 you should get a dictionary with about 119 values.
 
 ## get_geocode.py
-This script gets you a python dictionary of the probe id correlating to its county where its located.
+This script gets you a python dictionary of the probe id correlating to its state where its located.
 
 To run the script you do not have to adjust anything its ready to run.
 
