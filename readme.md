@@ -14,13 +14,14 @@ $ python3 get_asn.py
 you should get a dictionary with about 119 values.
 
 ## get_geocode.py
-This script gets you a python dictionary of the probe id correlating to its state where its located.
+This script gets you a python dictionary of the 21 states of sweden and the probes that are located in that state.
 
 To run the script you do not have to adjust anything its ready to run.
 
 ```bash
 $ python3 get_geocode.py
 ```
-you should get a dictionary with about 393 values.
+you should get a dictionary with 21 keys that each have different amount of values .
 
-<b>Note that this script uses a library which is a wrapper for the google api, so to run the script can take a while.<b> 
+<b>Note that this script uses a library which is a wrapper for the google api, so to run the script can take a while. But if you just want the results i have a txt file called landict.txt that you can look at.<b> 
+landict.txt is the output of get_geocode.py at 20/04 -2020 
