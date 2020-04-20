@@ -12,6 +12,11 @@ for probe in probes:
     coordinatelist.append(probe['geometry']['coordinates'])
     probe_id_list.append(probe['id'])
 
+oslo_probe = probe_id_list.index(3452)
+
+probe_id_list.remove(probe_id_list[oslo_probe])
+coordinatelist.remove(coordinatelist[oslo_probe])
+
 flip_list=[]
 for coordinate in coordinatelist:
     lon=str(coordinate[0])
@@ -36,7 +41,12 @@ values = location_list
 
 location_dict = {k: v for k, v in zip(keys, values)}
 
-pprint(location_dict)
+lan_dict = {}
+for key, value in location_dict.items():
+    if value not in lan_dict:
+        lan_dict[value] = [key]
+    else:
+        lan_dict[value].append(key)
 
 
-
+print(lan_dict)
