@@ -22,3 +22,5 @@ To run the script you do not have to adjust anything its ready to run.
 $ python3 get_geocode.py
 ```
 you should get a dictionary with about 393 values.
+
+<b>Note that this script uses a library which is a wrapper for the google api, so to run the script can take a while.<b> 
