@@ -23,5 +23,7 @@ $ python3 get_geocode.py
 ```
 you should get a dictionary with 21 keys that each have different amount of values .
 
-<b>Note that this script uses a library which is a wrapper for the google api, so to run the script can take a while. But if you just want the results i have a txt file called landict.txt that you can look at.<b> 
+<b>Note that this script uses a library which is a wrapper for the google api, so to run the script can take a while.</b>
+
+But if you just want the results i have a txt file called landict.txt that you can look at.
 landict.txt is the output of get_geocode.py at 20/04 -2020 
