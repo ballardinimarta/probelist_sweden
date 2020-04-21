@@ -13,6 +13,10 @@ $ python3 get_asn.py
 ```
 you should get a dictionary with about 119 values.
 
+But if you just want the results i have a txt file called asndict.txt that you can look at.
+
+asndict.txt is the output of get_asn.py at 20/04 -2020 
+
 ## get_geocode.py
 This script gets you a python dictionary of the 21 states of sweden and the probes that are located in that state.
 
@@ -26,4 +30,5 @@ you should get a dictionary with 21 keys that each have different amount of valu
 <b>Note that this script uses a library which is a wrapper for the google api, so to run the script can take a while.</b>
 
 But if you just want the results i have a txt file called landict.txt that you can look at.
+
 landict.txt is the output of get_geocode.py at 20/04 -2020 
