@@ -3,12 +3,12 @@ This is a program to find information on the Ripe Atlas probes and anchors that 
 https://atlas.ripe.net/results/maps/network-coverage/?filter=Sweden+(se)
 
 ## How to use
-####Clone this repo
+#### Clone this repo
 ```bash
 $ git clone https://github.com/ballardinimarta/probelist_sweden.git
 ```
 
-####Install requirements
+#### Install requirements
 ```bash
 $ pip install -r requirements.txt
 ```
@@ -52,7 +52,7 @@ $ python3 get_geocode.py
 But if you just want the results of
 ```bash
 get_location('all')
-```
+``
 i have a txt file called landict.txt that you can look at.
 
 landict.txt is the output of get_geocode.py at 21/04 -2020
