@@ -69,7 +69,7 @@ def get_location(status):
 
     def print_nice(lan_dict):
         for lan, id in lan_dict.items():
-            print("{}:\n {}".format(lan, id))
+            print("{}:\n {}\n".format(lan, id))
         print('Antal län : %d' % len(lan_dict))
 
 
