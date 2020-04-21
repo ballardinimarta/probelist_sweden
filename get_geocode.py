@@ -80,4 +80,4 @@ def get_location(status):
 # get_location('disconnected') gives you all disconnected probes
 # get_location('abandoned') gives you all abandoned probes
 
-get_location('all')
+get_location('all')# here is where you change
