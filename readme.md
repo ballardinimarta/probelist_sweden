@@ -52,7 +52,7 @@ $ python3 get_geocode.py
 But if you just want the results of
 ```bash
 get_location('all')
-``
+```
 i have a txt file called landict.txt that you can look at.
 
 landict.txt is the output of get_geocode.py at 21/04 -2020
