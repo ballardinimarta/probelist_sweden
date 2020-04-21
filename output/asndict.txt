@@ -1,4 +1,4 @@
-{158: 'ERI-AS',
+ 158: 'ERI-AS',
  174: 'COGENT-174',
  1257: 'SWIPNET - TELE2',
  1653: 'SUNET - SUNET Swedish University Network',
@@ -118,4 +118,4 @@
  206377: 'ITSAM-BEX - Kommunalforbundet ITSAM',
  206593: 'PROFITBYTE - Profitbyte AB',
  206774: 'INETBOLAGET - Internet bolaget Sverige AB',
- 207825: 'DATARYMDEN-AS - Datarymden Internet AB'}
+ 207825: 'DATARYMDEN-AS - Datarymden Internet AB'
