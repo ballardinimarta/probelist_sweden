@@ -28,18 +28,19 @@ But if you just want the results i have a txt file called asndict.txt that you c
 asndict.txt is the output of get_asn.py at 21/04 -2020
 
 ## get_geocode.py
-This script gets you a python dictionary of the 21 states of sweden and the probes that are located in that state.
+This script gets you a python dictionary of the 21 regions or the 290 municipalitys in Sweden and the probes that are located in that region/municipality.
 
 #### customize
-To run the script you do not have to adjust anything its ready to run. But if you want to see only the connected, disconnected or abandoned probes you can go to get_geocode.py and at the bottom change to your liking.
+To run the script you can choose if you either want to use get_lan()(for regions) or get_kommun()(for municipalitys). But if you want to see only the connected, disconnected or abandoned probes you can go to get_geocode.py and at the bottom change to your liking.
 
 ```bash
-# get_location('all') gives you all probes
-# get_location('connected') gives you all connected probes
-# get_location('disconnected') gives you all disconnected probes
-# get_location('abandoned') gives you all abandoned probes
+# get_lan/get_kommun('all') gives you all probes
+# get_lan/get_kommun('connected') gives you all connected probes
+# get_lan/get_kommun('disconnected') gives you all disconnected probes
+# get_lan/get_kommun('abandoned') gives you all abandoned probes
 
-get_location('all')# here is where you change
+get_lan('all')# here is where you change
+get_kommun('all')# here is where you change
 ```
 then after you adjusted the script to what output you want, just run the script.
 
@@ -51,8 +52,15 @@ $ python3 get_geocode.py
 
 But if you just want the results of
 ```bash
-get_location('all')
+get_lan('all')
 ```
-i have a txt file called landict.txt that you can look at.
+or
+```bash
+get_kommun('all')
+```
+
+i have a txt file called landict.txt or kommundict.txt that you can look at.
 
 landict.txt is the output of get_geocode.py at 21/04 -2020
+
+kommundict.txt is the output of get_geocode.py at 23/04 -2020
