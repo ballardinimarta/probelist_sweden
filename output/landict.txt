@@ -62,4 +62,4 @@ Jämtlands län:
 Örebro län:
  [32003, 32033, 32185, 32268, 51173]
 
-Antal län : 21
+Antal län : 21/21
