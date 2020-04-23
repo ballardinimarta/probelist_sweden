@@ -23,7 +23,7 @@ $ python3 get_asn.py
 ```
 you should get a dictionary with about 119 values.
 
-But if you just want the results i have a txt file called asndict.txt that you can look at.
+But if you just want the results i have a txt file called <b>asndict.txt</b> that you can look at.
 
 asndict.txt is the output of get_asn.py at 21/04 -2020
 
@@ -59,8 +59,17 @@ or
 get_kommun('all')
 ```
 
-i have a txt file called landict.txt or kommundict.txt that you can look at.
+i have a txt file called <b>landict.txt</b> or <b>kommundict.txt</b> that you can look at.
 
 landict.txt is the output of get_geocode.py at 21/04 -2020
 
 kommundict.txt is the output of get_geocode.py at 23/04 -2020
+
+## get_missing.py
+A script to find out the municipalities in Sweden that do not have a Ripe Atlas probe
+
+You do not have to change anything it is ready to run
+```bash
+$ python3 get_missing.py
+```
+if you only want to see the output i have a txt file with the output from 23/4-2020 called <b>missinglist.txt</b>
