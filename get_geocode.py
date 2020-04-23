@@ -1,5 +1,6 @@
 from geopy.geocoders import Nominatim
 from ripe.atlas.cousteau import ProbeRequest
+from pprint import pprint
 
 def get_lan(status):
 
@@ -159,13 +160,12 @@ def get_kommun(status):
             print("{}:\n {}\n".format(kommun, id))
         print('Antal kommuner : %d/290' % len(kommun_dict))
 
-
-    print_nice(kommun_dict)
+    pprint(kommun_dict)
 
 # get_lan/get_kommun('all') gives you all probes
 # get_lan/get_kommun('connected') gives you all connected probes
 # get_lan/get_kommun('disconnected') gives you all disconnected probes
 # get_lan/get_kommun('abandoned') gives you all abandoned probes
 
-get_lan('all')# here is where you change
+#get_lan('all')# here is where you change
 get_kommun('all')# here is where you change
