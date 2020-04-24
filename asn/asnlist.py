@@ -24,6 +24,8 @@ with open('asn/netnod.txt') as f:
             except ValueError:
                 pass
 
+netnod = list(set(netnod))
+
 
 def gavlix_check():
     asnumber = asnprobe.keys()
