@@ -33,4 +33,4 @@ def print_nice(asn_dict):
     for asn, network in asn_dict.items():
         print("{}:\n {}\n".format(asn, network))
 
-print_nice(asn_dict)
+print(asn_dict)
