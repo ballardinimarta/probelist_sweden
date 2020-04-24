@@ -19,7 +19,7 @@ This script gets you a python dictionary of the ASN correlating to the network p
 To run the script you do not have to adjust anything its ready to run.
 
 ```bash
-$ python3 get_asn.py
+$ python3 asn/get_asn.py
 ```
 you should get a dictionary with about 119 values.
 
@@ -45,7 +45,7 @@ get_kommun('all')# here is where you change
 then after you adjusted the script to what output you want, just run the script.
 
 ```bash
-$ python3 get_geocode.py
+$ python3 location/get_geocode.py
 ```
 
 <b>Note that this script uses a library which is a wrapper for the google api, so to run the script can take a while.</b>
@@ -70,6 +70,6 @@ A script to find out the municipalities in Sweden that do not have a Ripe Atlas 
 
 You do not have to change anything it is ready to run
 ```bash
-$ python3 get_missing.py
+$ python3 location/get_missing.py
 ```
 if you only want to see the output i have a txt file with the output from 23/4-2020 called <b>missinglist.txt</b>
