@@ -31,6 +31,7 @@ def gavlix_check():
     for x in gavlix:
         if x not in asnumber:
             no_probe.append(x)
+    print('The AS that do not have a ripe atlas probe (ASNs from gavlix)')
     pprint(no_probe)
 
 def netnod_check():
@@ -39,6 +40,7 @@ def netnod_check():
     for x in netnod:
         if x not in asnumber:
             no_probe.append(x)
+    print('The AS that do not have a ripe atlas probe (ASNs from netnod)')
     pprint(no_probe)
 
 def sthix_check():
@@ -47,6 +49,9 @@ def sthix_check():
     for x in sthix:
         if x not in asnumber:
             no_probe.append(x)
+    print('The AS that do not have a ripe atlas probe (ASNs from sthix)')
     pprint(no_probe)
 
+gavlix_check()
+netnod_check()
 sthix_check()
