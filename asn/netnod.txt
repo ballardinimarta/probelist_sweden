@@ -1,0 +1,319 @@
+Kazakhtelecom	Stockholm	nmc@telecom.kz		Selective
+Fiberaccessbolaget i Sverige AB	Stockholm
+Subspace Communication LLC	Stockholm	peering@subspace.com		Unknown
+Vattenfall Eldistribution AB	Göteborg			Unknown
+Kaisanet Oy	Stockholm	peering@kaisanet.fi		Unknown
+Wnet Ukraine LLC	Stockholm	peering@w-net.us		Selective
+Fiberaccessbolaget i Sverige AB	Stockholm
+Verizon Sweden AB	Stockholm	peering@verizonbusiness.com	702
+Verizon Sweden AB	Stockholm	peering@verizonbusiness.com	702
+Apple Aktiebolag	Copenhagen	peering@group.apple.com	714	Selective
+Apple Aktiebolag	Stockholm	peering@group.apple.com	714	Selective
+Apple Aktiebolag	Stockholm	peering@group.apple.com	714	Selective
+Apple Aktiebolag	Copenhagen	peering@group.apple.com	714	Selective
+Tele2 Sverige AB	Göteborg	peering@tele2.net	1257	Selective
+Tele2 Sverige AB	Copenhagen	peering@tele2.net	1257	Selective
+Tele2 Sverige AB	Stockholm	peering@tele2.net	1257	Selective
+Vodafone Enterprise Sweden AB	Stockholm	peering-request@cw.net	1273
+Tirastel GmbH	Stockholm	peering@tirastel.de	1547	Selective
+Vetenskapsrådet/Sunet	Stockholm	peering@sunet.se	1653	Selective
+Vetenskapsrådet/Sunet	Göteborg	peering@sunet.se	1653	Selective
+Vetenskapsrådet/Sunet	Sundsvall	peering@sunet.se	1653	Selective
+Vetenskapsrådet/Sunet	Luleå	peering@sunet.se	1653	Selective
+Vetenskapsrådet/Sunet	Stockholm	peering@sunet.se	1653	Selective
+Vetenskapsrådet/Sunet	Copenhagen	peering@sunet.se	1653	Selective
+STUPI.net (Stupi AB)	Stockholm		1880	Selective
+STUPI.net (Stupi AB)	Stockholm		1880	Selective
+STUPI.net (Stupi AB)	Stockholm		1880	Selective
+STUPI.net (Stupi AB)	Stockholm		1880	Selective
+GlobalConnect AS (Norway)	Stockholm	peering@as2116.net	2116	Selective
+Telenor Sverige AB	Stockholm	peering@telenor.net	2119	Selective
+Telenor Sverige AB	Copenhagen	peering@telenor.net	2119	Selective
+Telenor Sverige AB	Sundsvall	peering@telenor.net	2119	Selective
+Telenor Sverige AB	Copenhagen	peering@telenor.se	2119	Selective
+Telenor Sverige AB	Göteborg	peering@telenor.net	2119	Selective
+Telenor Sverige AB	Stockholm	peering@telenor.net	2119	Selective
+NORDUnet A/S	Stockholm	peering@nordu.net	2603	Selective
+NORDUnet A/S	Copenhagen	peering@nordu.net	2603	Selective
+Automatic (WordPress.com)	Stockholm	peering@automattic.com	2635	Open
+AT&T Global Network Services Sweden AB	Stockholm	peering@attglobal.net	2686	Selective
+SpriteLink	Stockholm	https://www.peeringdb.com/net/1219	2863
+Orange Business Sweden AB	Stockholm	peering@orange-ftgroup.com	2874
+Netflix Streaming Services International B.V.	Stockholm	https://signup.netflix.com/openconnect/peeringrequest	2906	Open
+Netflix Streaming Services International B.V.	Stockholm	https://signup.netflix.com/openconnect/peeringrequest	2906	Open
+NTT	Stockholm	peering@ntt.net	2914	Restrictive
+VimpelCom PJSC	Stockholm	ncc@beeline.ru	3216	Selective
+Ålands Telekommunikation Ab (ÅLCOM)	Stockholm	routing@alcom.ax	3238	Open
+TDC A/S	Copenhagen	peering@tdc.dk	3292	Selective
+TDC A/S	Stockholm	peering@tdc.dk	3292	Selective
+Telia Sverige AB	Göteborg	peering@telia.net	3301
+Telia Sverige AB	Sundsvall	peering@telia.net	3301
+Telia Sverige AB	Stockholm	peering@telia.net	3301
+Telia Sverige AB	Copenhagen	peering@telia.net	3301
+Swisscom (Schweiz) AG	Stockholm	peering@ip-plus.net	3303	Selective
+BICS	Copenhagen	ip-plus.peering@swisscom.com	3303	Selective
+CITIC Telecom CPC Netherlands B.V.	Stockholm	ix@citictel-cpc.com	3327	Selective
+Teracom A/S	Copenhagen	peering@teracom.dk	3342	Open
+Packet Clearing House	Stockholm	indiver@pch.net	3856
+BT Nordics Sweden AB	Stockholm	peering@bt.com	5400	Restrictive
+Riot Games Ltd	Stockholm	peerng@riotgames.com	6507	Open
+Elisa Oyj	Stockholm	peering@elisaip.net	6667	Selective
+Hurricane Electric	Stockholm	peering@he.net	6939	Open
+Hurricane Electric	Copenhagen	peering@he.net	6939	Open
+Hurricane Electric	Stockholm	peering@he.net	6939	Open
+Hurricane Electric	Stockholm	peering@he.net	6939	Open
+Hurricane Electric	Stockholm	peering@he.net	6939	Open
+TELIN	Stockholm	peering@telin.co.id	7713	Open
+Microsoft Corporation	Copenhagen		8075	Selective
+Microsoft Corporation	Copenhagen		8075	Selective
+Microsoft Corporation	Copenhagen		8075	Selective
+Microsoft Corporation	Copenhagen		8075	Selective
+Microsoft Corporation	Stockholm		8075	Selective
+Colt Technology Services AB	Stockholm	peering@colt.net	8220	Selective
+Colt Technology Services AB	Copenhagen	peering@colt.net	8220	Selective
+MTS PJSC	Stockholm	peering@mtu.ru	8359	Selective
+MTS PJSC	Stockholm	peering@mtu.ru	8359	Selective
+MTS PJSC	Stockholm	peering@mtu.ru	8359	Selective
+MTS PJSC	Stockholm	peering@mtu.ru	8359	Selective
+MTS PJSC	Stockholm	peering@mtu.ru	8359	Selective
+MTS PJSC	Stockholm	peering@mtu.ru	8359	Selective
+Telekom Srbija	Stockholm	peering@telekom.rs	8400	Selective
+Spotify AB	Stockholm	peering@spotify.com	8403	Open
+Bahnhof AB	Stockholm	peering@bahnhof.net	8473	Selective
+Bahnhof AB	Copenhagen	peering@bahnhof.net	8473	Selective
+Bahnhof AB	Sundsvall	peering@bahnhof.net	8473	Selective
+Bahnhof AB	Stockholm	peering@bahnhof.net	8473	Selective
+Bahnhof AB	Stockholm	peering@bahnhof.net	8473	Selective
+Omantel Telecommunications	Stockholm	peering@omantel.com	8529	Selective
+Phoenix IT Services	Stockholm	peering@phoenix.co.uk	8613	Open
+INFONET AS	Stockholm	noc@infonet.ee	8728	Open
+COMCOR	Stockholm		8732
+LM Jogback Datakonsult	Stockholm		8995
+RETN Ltd.	Stockholm	peering@retn.net	9002	Selective
+RETN Ltd.	Stockholm	peering@retn.net	9002	Selective
+RETN Ltd.	Stockholm	peering@retn.net	9002	Selective
+RETN Ltd.	Stockholm	peering@retn.net	9002	Selective
+M247 Ltd	Stockholm	peering@m247.com	9009
+M247 Ltd	Stockholm	peering@m247.com	9009
+Försvarsmakten	Stockholm	peering-fm@mil.se	9201	Open
+Försvarsmakten	Stockholm	peering-fm@mil.se	9201	Open
+Yahoo	Stockholm	peering-requests@yahoo-inc.com	10310	Selective
+A/C Registro .br	Stockholm		11644
+Afilias	Stockholm	peering@afilias-nst.info	12041	Open
+PJSC Rostelecom	Stockholm	peering@rt.ru	12389	Selective
+IDNet Ltd	Stockholm	peering@idnet.net	12496	Open
+IP-Only Networks AB	Copenhagen	peering@ip-only.net	12552	Open
+IP-Only Networks AB	Göteborg	peering@ip-only.net	12552	Open
+IP-Only Networks AB	Copenhagen	peering@ip-only.net	12552	Open
+IP-Only Networks AB	Stockholm	peering@ip-only.net	12552	Open
+IP-Only Networks AB	Sundsvall	peering@ip-only.net	12552	Open
+SIA Tet	Stockholm	peering@lattelecom.lv	12578	Open
+Götalandsnätet AB	Copenhagen	netnod-peering@gota.net	12597	Open
+Götalandsnätet AB	Stockholm	netnod-peering@gota.net	12597	Open
+Net By Net Holding LLC	Stockholm	noc@ti.ru	12714	Selective
+Enter srl	Stockholm	peering@enter.it	12850	Open
+Enter srl	Stockholm	peering@enter.it	12850	Open
+Hanse	Stockholm	peering@hanse.com	12939	Open
+Lidero Network AB	Stockholm	peering@lidero.net	13189	Open
+Lidero Network AB	Stockholm	peering@lidero.net	13189	Open
+Lidero Network AB	Sundsvall	peering@lidero.net	13189	Open
+UAB Bite Lietuva	Stockholm		13194
+UAB Bite Lietuva	Stockholm	peering@bi.lt	13194	Selective
+Cloudflare Inc	Göteborg	peering@cloudflare.com	13335	Open
+Cloudflare Inc	Stockholm	peering@cloudflare.com	13335	Open
+Cloudflare Inc	Copenhagen	peering@cloudflare.com	13335	Open
+Cloudflare Inc	Stockholm	peering@cloudflare.com	13335	Open
+Cloudflare Inc	Stockholm	peering@cloudflare.com	13335	Open
+Cloudflare Inc	Copenhagen	peering@cloudflare.com	13335	Open
+Cloudflare Inc	Copenhagen	peering@cloudflare.com	13335	Open
+Cloudflare Inc	Stockholm	peering@cloudflare.com	13335	Open
+Twitter International Company	Stockholm	peering@twitter.com	13414	Selective
+Linkedin	Stockholm	peering@linkedin.com	14413	Open
+Google Sweden AB	Stockholm	peering@google.com	15169
+Telia Sverige (Perspektiv Bredband)	Copenhagen	noc@perspektivbredband.se	15782	Open
+Equinix	Stockholm	ix.support@telecity.com	15830	Selective
+DNA Plc	Stockholm	peering@dnaip.fi	16086	Selective
+DNA Plc	Stockholm	peering@dnaip.fi	16086	Selective
+Primlight AB	Stockholm	noc@borderlight.net	16253	Open
+LeaseWeb Network B.V.	Stockholm	peering@leaseweb.com	16265	Selective
+Amazon Data Service Sweden AB	Oslo	peering@amazon.com	16509	Open
+Amazon Data Service Sweden AB	Copenhagen	peering@amazon.com	16509	Open
+Amazon Data Service Sweden AB	Stockholm	peering@amazon.com	16509	Open
+Amazon Data Service Sweden AB	Copenhagen	peering@amazon.com	16509	Open
+Amazon Data Service Sweden AB	Copenhagen	peering@amazon.com	16509	Open
+Amazon Data Service Sweden AB	Stockholm	peering@amazon.com	16509	Open
+Stockholms läns landsting	Stockholm	peering@sll.se	19399	Selective
+Imperva Inc	Stockholm	arye.landviger@imperva.com	19551	Selective
+Dropbox	Stockholm	peering@dropbox.com	19679	Open
+Dropbox	Stockholm	peering@dropbox.com	19679	Open
+Nexeon Technologies	Stockholm	peering@as20278.net	20278	Open
+JSC TransTeleCom (TTK)	Stockholm	peering@ttk.ru	20485	Selective
+JSC TransTeleCom (TTK)	Stockholm	peering@ttk.ru	20485	Selective
+JSC TransTeleCom (TTK)	Stockholm	peering@ttk.ru	20485	Selective
+JSC TransTeleCom (TTK)	Stockholm	peering@ttk.ru	20485	Selective
+NL-IX	Copenhagen		20562
+Rascom CJSC	Stockholm	noc@rascom.ru	20764	Open
+Akamai International B.V.	Stockholm	peering@akamai.com	20940	Open
+Akamai International B.V.	Stockholm	peering@akamai.com	20940	Open
+Akamai International B.V.	Stockholm	peering@akamai.com	20940	Open
+Akamai International B.V.	Copenhagen	peering@akamai.com	20940	Open
+Limelight Networks Netherlands BV	Stockholm	peering@llnw.com	22822	Selective
+Alibaba	Stockholm	cdn-peering@list.alibaba-inc.com	24429	Open
+SG.GS	Stockholm	peering@sg.gs	24482	Open
+Hetzner Online GmbH	Stockholm	peering@hetzner.de	24940	Open
+IP-Max	Stockholm	peering@ip-max.net	25091	Open
+Keycom PLC	Stockholm	peering@as25178.net	25178	Open
+VeriSign Netherlands BV	Stockholm	peering@verisign.com	26415	Open
+Symantec Nordic AB	Stockholm	peering.pdl-sy@broadcom.com	27471	Open
+Transdata AS	Stockholm	noc@transdata.com	29479	Open
+Bredband2	Copenhagen	peering@bredband2.se	29518	Open
+Bredband2	Stockholm	peering@bredband2.se	29518	Open
+Bredband2	Copenhagen	peering@bredband2.se	29518	Open
+S:t Erik Kommunikation AB	Stockholm	claes.leufven@tele2.com	29672	Selective
+ASERGO Scandinavia ApS	Copenhagen	peering@asergo.com	30736	Open
+SpaceDump IT AB	Stockholm	peering@spacedump.net	30880	Open
+Nianet A/S	Stockholm	peering@nianet.dk	31027	Selective
+Avelacom	Stockholm	peers@avelacom.ru	31059	Open
+MegaFon PJSC	Stockholm	peering@megafon.ru	31133	Selective
+Global Network Management Ltd	Stockholm	noc@gblnet.net	31500	Selective
+Global Network Management Ltd	Stockholm	noc@gblnet.net	31500	Selective
+Global Network Management Ltd	Stockholm	noc@gblnet.net	31500	Selective
+DENIC eG	Stockholm	peering@denic.de	31529	Open
+Valve Corporation	Stockholm	peering@valvesoftware.com	32590	Open
+Valve Corporation	Stockholm	peering@valvesoftware.com	32590	Open
+Facebook	Stockholm	peering@fb.com	32934	Selective
+Facebook	Copenhagen	peering@fb.com	32934	Selective
+Facebook	Copenhagen	peering@fb.com	32934	Selective
+Facebook	Stockholm	peering@fb.com	32934	Selective
+Sony Interactive Entertainment LLC	Stockholm	sie-cgei-peering@am.sony.com	33353	Selective
+Stockholm Internet eXchange AB	Stockholm	rasmus@sthix.net	33886	Open
+Core-Backbone	Stockholm	peering@core-backbone.com	33891	Selective
+Netorn	Stockholm	noc@netorn.net	34123	Open
+Teleservice Bredband Skåne Ab	Copenhagen	peering@teleservice.net	34244	Open
+Teleservice Bredband Skåne Ab	Copenhagen	peering@teleservice.net	34244	Open
+Riksnet, Rätt Internet-Kapacitet I Sverige	Stockholm	peering@riksnet.se	34610	Open
+Riksnet, Rätt Internet-Kapacitet I Sverige	Sundsvall	peering@riksnet.se	34610	Open
+Net at Once Sweden AB	Stockholm	peering@netatonce.se	35706	Open
+Net at Once Sweden AB	Copenhagen	peering@netatonce.se	35706	Open
+Net at Once Sweden AB	Göteborg	peering@netatonce.se	35706	Open
+Net at Once Sweden AB	Stockholm	peering@netatonce.se	35706	Open
+NetActuate Inc	Stockholm	peering@vr.org	36236	Open
+Softlayer Dutch Holdings B.V.	Stockholm	peering@softlayer.com	36351	Open
+Softlayer Dutch Holdings B.V.	Stockholm	peering@softlayer.com	36351	Open
+OpenDNS	Copenhagen	peering@opendns.com	36692	Open
+NewMedia Express	Stockholm	peering@newmediaexpress.com	38001	Open
+31173 Services AB	Göteborg	peering@31173.se	39351	Open
+31173 Services AB	Copenhagen	peering@31173.se	39351	Open
+31173 Services AB	Stockholm	peering@31173.se	39351	Open
+31173 Services AB	Copenhagen	peering@31173.se	39351	Open
+Stofa A/S	Copenhagen	peering@stofa.dk	39642	Selective
+Stofa A/S	Copenhagen	peering@stofa.dk	39642	Selective
+Stofa A/S	Copenhagen	peering@stofa.dk	39642	Selective
+Stofa A/S	Copenhagen	peering@stofa.dk	39642	Selective
+Com Hem AB	Stockholm	peering@comhem.com	39651	Selective
+Com Hem AB	Göteborg	peering@comhem.com	39651	Selective
+Com Hem AB	Copenhagen	peering@comhem.com	39651	Selective
+Com Hem AB	Copenhagen	peering@comhem.com	39651	Selective
+Com Hem AB	Sundsvall	peering@comhem.com	39651	Selective
+Admax AB	Stockholm	peering@admax.se	39806	Selective
+DK Hostmaster A/S	Copenhagen	net@dk-hostmaster.dk	39839	Open
+IPTP Networks	Stockholm	ncc@iptp.net	41095	Restrictive
+Quality of Service Networks AB	Stockholm	peering@telelocation.com	41753	Unknown
+Anexia Internetdienstleistungs GmbH	Stockholm	peering@anexia-it.com	42473	Open
+Anexia Internetdienstleistungs GmbH	Stockholm	peering@anexia-it.com	42473	Open
+Anexia Internetdienstleistungs GmbH	Copenhagen	peering@anexia-it.com	42473	Open
+Fiberby ApS	Copenhagen	peering@fiberby.net	42541	Open
+Baffin Bay Networks	Stockholm	peering@baffinbaynetworks.com	42649	Selective
+Glesys AB	Oslo	peering@portlane.com	42708	Selective
+Glesys AB	Stockholm	peering@portlane.com	42708	Selective
+Glesys AB	Copenhagen	peering@portlane.com	42708	Selective
+Glesys AB	Stockholm	peering@portlane.com	42708	Selective
+IX Reach Ltd	Stockholm	peering@ixreach.com	43531	Selective
+KVANT-TELECOM JSC	Stockholm	peering@kvant-telecom.ru	43727	Open
+Forss Webservice AB	Stockholm		43809	Open
+Forss Webservice AB	Stockholm		43809	Open
+Mainloop Solutions AB	Stockholm	peering@mainloop.net	43893	Open
+Modern Solutions LTD	Stockholm	noc@cln.net	44020	Open
+Hi3G Access AB	Stockholm	daniel.wiberg@tre.se	44034	Selective
+Hi3G Access AB	Copenhagen	daniel.wiberg@tre.se	44034	Selective
+Hi3G Access AB	Copenhagen	daniel.wiberg@tre.se	44034	Selective
+Hi3G Access AB	Copenhagen	daniel.wiberg@tre.se	44034	Selective
+Hi3G Access AB	Copenhagen	daniel.wiberg@tre.se	44034	Selective
+Telavox AB	Copenhagen	peering@telavox.se	44123	Open
+Telavox AB	Stockholm	peering@telavox.se	44123	Open
+InternetOne	Stockholm	marco@internetone.it	44160	Open
+Forcepoint	Stockholm	peering@forcepoint.com	44444	Open
+SHLAB	Copenhagen	leo@shlab.se	44746	Open
+Obtel Ltd	Stockholm	hd@obtel.pro	44843	Open
+A3 Företag AB	Sundsvall	peering@alltele.se	45011	Selective
+A3 Företag AB	Copenhagen	peering@alltele.se	45011	Selective
+A3 Företag AB	Stockholm	peering@alltele.se	45011	Selective
+A3 Företag AB	Copenhagen	peering@alltele.se	45011	Selective
+Twitch	Stockholm	peering@twitch.tv	46489	Open
+ViaEuropa Sverige AB	Stockholm	peering@viaeuropa.net	47155	Open
+ViaEuropa Sverige AB	Copenhagen	peering@viaeuropa.net	47155	Open
+Ericsson Edge Gravity Inc	Stockholm	peering@vidscale.com	47254	Open
+V Kontakte Ltd	Stockholm	noc@vkontakte.ru	47541
+Bredbandskollen	Stockholm	peering@glesys.se	47699	Open
+Sveriges Radio AB	Stockholm	hostmaster@sr.se	47708	Open
+Netrouting	Stockholm	peering@netrouting.com	47869	Open
+Sofia Connect EAD (MEGAPORT)	Stockholm	peering@sofia-connect.net	47872	Open
+Gobler.net ApS	Copenhagen	peering@gobler.net	48374	Open
+Knipp Medien und Kommunikation GmbH	Stockholm	noc@knipp.de	48519	Open
+IPvision A/S	Copenhagen	peering@ipvision.dk	48564	Open
+Elastx	Stockholm	peering@elastx.se	48579	Open
+Nordiska Servercentralen AB	Stockholm	peering@servercentralen.se	49515	Open
+Digital Telecommunication Services S.r.l.	Stockholm	peering@as49605.net	49605	Open
+Internetport sweden AB	Stockholm	peering@internetport.se	49770	Open
+Serverel	Stockholm	peering@serverel.com	50245	Open
+Stockholms Stadsnät AB	Stockholm	peering@stosn.se	50821	Selective
+Metroset Ltd.	Stockholm	peering@metro-set.ru	50923	Open
+Metroset Ltd.	Stockholm	peering@metro-set.ru	50923	Open
+Excellent Hosting AB	Copenhagen	peering@excellent-hosting.net	50986	Open
+Excellent Hosting AB	Stockholm	peering@excellent-hosting.net	50986	Open
+Altus Host B. V.	Stockholm		51430	Unknown
+One.com A/S	Copenhagen	peering@one.com	51468	Open
+One.com A/S	Stockholm	peering@one.com	51468	Open
+One.com A/S	Copenhagen	peering@one.com	51468	Open
+3T COM Ltd	Stockholm	admin@3tcom.net	51555	Open
+New Continuum Holdings Corp	Stockholm	peering@continuumdatacenters.com	53264	Open
+Stackpath LLC	Stockholm	peering@stackpath.com	54104	Selective
+Stackpath LLC	Stockholm	peering@stackpath.com	54104	Selective
+Canadian Internet Registration Authority (CIRA)	Stockholm	peering@cira.ca	55195	Open
+Canadian Internet Registration Authority (CIRA)	Stockholm	peering@cira.ca	55195	Open
+Visolit Sweden AB	Stockholm	peering@telecomputing.se	57208	Open
+NetIX Communications Ltd	Stockholm	peering@netix.net	57463	Open
+Blizzard Entertainment SAS	Stockholm	peering@blizzard.com	57976	Open
+Sentia	Copenhagen	noc@solido.net	59469	Open
+Cleanmat EOOD	Stockholm	support@cleanmat-bg.com	59749	Open
+DreamHack AB	Stockholm	peering@dreamhack.com	59835	Open
+Balkan Internet Exchange	Stockholm	peering@b-ix.net	59900	Open
+Bredbåndsfylket Troms AS	Stockholm	rogerj@bbft.no	61006	Selective
+Flexonet A/S	Copenhagen	peering@flexonet.dk	61397	Open
+Colocationix	Copenhagen	hostmaster@colocationix.net	61955	Selective
+Bredbandsson AB	Copenhagen	peering@nordiccommunication.com	62183	Open
+RISE	Stockholm	noc@rise.ph	63927	Open
+RIPE NCC	Stockholm	ris-peerings@ripe.net	197000	Open
+RIPE NCC	Stockholm	dns@ripe.net	197000	Open
+IIT-CNR (Istituto di Informatica e Telematica del CNR)	Stockholm		197440
+Obenetwork AB	Stockholm	peering@obenetwork.com	197595	Open
+Obenetwork AB	Copenhagen	peering@obenetwork.com	197595	Open
+Obenetwork AB	Copenhagen	peering@obenetwork.com	197595	Open
+Obenetwork AB	Oslo	peering@obenetwork.com	197595	Open
+MrFriday AB	Stockholm	peering@mrfriday.com	197617	Open
+OCNET	Stockholm	noc@on1call.se	198463	Open
+Wekudata AB	Stockholm	peering@wekudata.se	198612	Open
+flexOptix GmbH	Stockholm	peering@flexoptix.net	199121	Open
+Excedo Networks AB	Stockholm	peering@excedo.se	199150	Open
+Excedo Networks AB	Stockholm	peering@excedo.se	199150	Open
+Excedo Networks AB	Stockholm	peering@excedo.se	199150	Open
+G-Core Labs	Stockholm	noc@gcore.lu	199524	Open
+Hydro66 Svenska AB	Stockholm		200675	Unknown
+Tampnet AS	Stockholm	peering@tampnet.com	200781	Open
+Sveriges Televison AB	Stockholm	peering@svt.se	201641	Open
+Ziron (UK) Ltd	Stockholm	peering@ziron.com	202112	Open
+Teletek	Copenhagen	uffe@teletek.se	203052	Open
+Core9 Hosting AB	Stockholm	peering@core9.se	203975	Open
+Netsite A/S	Copenhagen	peering@netsite.dk	205206	Open
+Verisec AB	Stockholm	tony.buss@verisec.com	205916	Selective
+Peter Hessler	Stockholm	peering@as205970.net	205970	Open
