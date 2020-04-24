@@ -16,6 +16,6 @@ diff = [x for x in kommun_all if x not in s]
 def print_nice(diff):
     for x in diff:
         print('{}\n'.format(x))
-    print('Antal kommuner utan någon probe: %d'% len(diff))
+    print('Antal kommuner utan någon probe: %d/290'% len(diff))
 
 print_nice(diff)

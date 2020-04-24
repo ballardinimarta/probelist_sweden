@@ -366,4 +366,4 @@ Ystads kommun
 
 Ale kommun
 
-Antal kommuner utan någon probe: 184
+Antal kommuner utan någon probe: 184/290
