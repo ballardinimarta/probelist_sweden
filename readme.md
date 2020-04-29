@@ -73,3 +73,11 @@ You do not have to change anything it is ready to run
 $ python3 location/get_missing.py
 ```
 if you only want to see the output i have a txt file with the output from 23/4-2020 called <b>missinglist.txt</b>
+
+## map.py
+If you like graphics and want to se a map of sweden, with the municipalities with probes highlighted you can either look at the link to the visualisation of my html-file https://ballardinimarta.github.io/probelist_sweden/output/map.html
+
+or run the code locally, either just open the map.html file in your browser or update the html-file and run to save the new version
+```bash 
+$ python3 location/map.py
+```
