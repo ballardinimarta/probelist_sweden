@@ -2,7 +2,7 @@ from probedict import kommun_dict
 from pprint import pprint
 import pandas as pd
 
-df = pd.read_excel('sveriges-kommuner.xls')
+df = pd.read_excel('location/sveriges-kommuner.xls')
 kommun_all = df['Kommuner'].tolist()
 
 kommun_probe=kommun_dict.keys()

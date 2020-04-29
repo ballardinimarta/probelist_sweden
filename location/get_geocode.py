@@ -146,6 +146,7 @@ def get_kommun(status):
     keys = probe_id_list
     values = location_list
 
+
     location_dict = {k: v for k, v in zip(keys, values)}
 
     kommun_dict = {}
@@ -155,12 +156,20 @@ def get_kommun(status):
         else:
             kommun_dict[value].append(key)
 
+    for x in list(kommun_dict):
+        if 'Göteborgs Stad' in x:
+            kommun_dict['Göteborgs kommun'] = kommun_dict.pop('Göteborgs Stad')
+
     def print_nice(kommun_dict):
         for kommun, id in kommun_dict.items():
             print("{}:\n {}\n".format(kommun, id))
         print('Antal kommuner : %d/290' % len(kommun_dict))
 
-    pprint(kommun_dict)
+    def dict_print(kommun_dict):
+        print('kommun_dict=')
+        pprint(kommun_dict)
+
+    dict_print(kommun_dict)
 
 # get_lan/get_kommun('all') gives you all probes
 # get_lan/get_kommun('connected') gives you all connected probes
