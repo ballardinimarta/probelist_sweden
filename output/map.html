@@ -237,7 +237,9 @@
 
          for (var i = 0; i < probes.length; i++) {
       marker = new L.marker([probes[i]['latitude'],probes[i]['longitude']])
-        .bindPopup(probes[i]['status_name'])
+        .bindPopup('<strong>Probe status: </strong>'+probes[i]['status_name'] +
+        '<br><strong>Probe ID: </strong>'+JSON.stringify(probes[i]['id']) +
+        '<br><strong>Probe ASN: </strong>' + JSON.stringify(probes[i]['asn_v4']))
         .addTo(scatter);
     }
 
