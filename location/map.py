@@ -16,6 +16,14 @@ for x in kommuner['features']:
     for k in probe_data.index:
         if k in x['properties']['name']:
             x['properties']['probes']= str(probe_data.antal[k])
+for x in kommuner['features']:
+    try:
+        x['properties']['probes']
+        pass
+    except KeyError:
+        x['properties']['probes'] = '0'
+
+
 
 probe_geo = kommuner
 
@@ -38,7 +46,7 @@ choropleth = folium.Choropleth(
 ).add_to(m)
 
 choropleth.geojson.add_child(
-    folium.features.GeoJsonTooltip(['name'],labels=False)
+    folium.features.GeoJsonTooltip(['name'],labels=True, aliases=['kommuner: '])
 )
 
 folium.LayerControl(collapsed=True).add_to(m)
