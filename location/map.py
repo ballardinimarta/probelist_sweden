@@ -7,16 +7,21 @@ probes={}
 for x in kommun_dict:
     probes[x]=len(kommun_dict[x])
 
+probe_data = pd.DataFrame.from_dict(probes, orient='index', columns=['antal'])
+
 with urlopen('http://kodapan.se/geodata/data/2015-06-26/kommuner-kustlinjer.geo.json') as response:
     kommuner = json.load(response)
 
-probe_geo = kommuner
+for x in kommuner['features']:
+    for k in probe_data.index:
+        if k in x['properties']['name']:
+            x['properties']['probes']= str(probe_data.antal[k])
 
-probe_data = pd.DataFrame.from_dict(probes, orient='index', columns=['antal'])
+probe_geo = kommuner
 
 m = folium.Map(location=[62.99,17.64], zoom_start=5)
 
-bins = list(probe_data['antal'].quantile([0,0.00001,0.000002, 1]))
+bins = list(probe_data['antal'].quantile([0,0.000001,0.000002,1]))
 
 
 choropleth = folium.Choropleth(
@@ -38,4 +43,5 @@ choropleth.geojson.add_child(
 
 folium.LayerControl(collapsed=True).add_to(m)
 
-m.save('output/map.html')
+# To make a new basic html map with the highlighted municipalities
+#m.save('output/map_2.html')
