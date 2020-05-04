@@ -217,8 +217,8 @@
                     "openstreetmap" : tile_layer,
                 },
                 overlays :  {
-                    "choropleth" : choropleth,
-                    "scatter" : scatter
+                    "Kommuner" : choropleth,
+                    "Probes" : scatter
                 },
             };
             L.control.layers(
@@ -235,12 +235,36 @@
          var jsonObject = JSON.parse(xhReq.responseText)
          var probes = (jsonObject['data']['probes'])
 
+         var LeafIcon = L.Icon.extend({
+          options: {
+              iconSize:     [24, 24],
+              iconAnchor:   [24, 24],
+              popupAnchor:  [-0, -25]
+          }
+      });
+      var greenIcon = new LeafIcon({iconUrl: 'green_icon.png'}),
+      redIcon = new LeafIcon({iconUrl: 'red_icon.png'}),
+      yellowIcon = new LeafIcon({iconUrl: 'yellow_icon.png'});
+
          for (var i = 0; i < probes.length; i++) {
-      marker = new L.marker([probes[i]['latitude'],probes[i]['longitude']])
-        .bindPopup('<strong>Probe status: </strong>'+probes[i]['status_name'] +
-        '<br><strong>Probe ID: </strong>'+JSON.stringify(probes[i]['id']) +
-        '<br><strong>Probe ASN: </strong>' + JSON.stringify(probes[i]['asn_v4']))
-        .addTo(scatter);
-    }
+           if (probes[i]['status'] == 1) {marker = new L.marker([probes[i]['latitude'],probes[i]['longitude']], {icon: greenIcon})
+           .bindPopup('<strong>Probe Status: </strong>'+probes[i]['status_name'] +
+           '<br><strong>Probe ID: </strong>'+JSON.stringify(probes[i]['id']) +
+           '<br><strong>Probe ASN: </strong>' + JSON.stringify(probes[i]['asn_v4'])+
+           '<br><strong>Probe Country: </strong>'+probes[i]['country_code'])
+           .addTo(scatter);}
+           else if (probes[i]['status'] == 2) {marker = new L.marker([probes[i]['latitude'],probes[i]['longitude']], {icon: yellowIcon})
+           .bindPopup('<strong>Probe Status: </strong>'+probes[i]['status_name'] +
+           '<br><strong>Probe ID: </strong>'+JSON.stringify(probes[i]['id']) +
+           '<br><strong>Probe ASN: </strong>' + JSON.stringify(probes[i]['asn_v4'])+
+           '<br><strong>Probe Country: </strong>'+probes[i]['country_code'])
+           .addTo(scatter);}
+           else {marker = new L.marker([probes[i]['latitude'],probes[i]['longitude']], {icon: redIcon})
+          .bindPopup('<strong>Probe Status: </strong>'+probes[i]['status_name'] +
+          '<br><strong>Probe ID: </strong>'+JSON.stringify(probes[i]['id']) +
+          '<br><strong>Probe ASN: </strong>' + JSON.stringify(probes[i]['asn_v4'])+
+          '<br><strong>Probe Country: </strong>'+probes[i]['country_code'])
+          .addTo(scatter);
+    }}
 
 </script>
