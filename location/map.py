@@ -3,6 +3,8 @@ import pandas as pd
 from urllib.request import urlopen
 import json
 from probedict import kommun_dict
+from folium.plugins import MarkerCluster
+
 probes={}
 for x in kommun_dict:
     probes[x]=len(kommun_dict[x])
@@ -14,7 +16,7 @@ with urlopen('http://kodapan.se/geodata/data/2015-06-26/kommuner-kustlinjer.geo.
 
 for x in kommuner['features']:
     for k in probe_data.index:
-        if k in x['properties']['name']:
+        if k in x['properties']['name'] and x['properties']['status'] != 3:
             x['properties']['probes']= str(probe_data.antal[k])
 for x in kommuner['features']:
     try:
@@ -31,6 +33,18 @@ m = folium.Map(location=[62.99,17.64], zoom_start=5)
 
 bins = list(probe_data['antal'].quantile([0,0.000001,0.000002,1]))
 
+mc = MarkerCluster()
+
+markers = folium.Marker(
+    with urlopen('https://stat.ripe.net/data/atlas-probes/data.json?resource=SE') as res:
+        prober = json.load(res)
+    for i in prober:
+        location= [prober[i]['latitude'],prober[i]['longitude']],
+        popup =('<strong>Probe Status: </strong>'+probes[i]['status_name'] +
+                '<br><strong>Probe ID: </strong>'+JSON.stringify(probes[i]['id']) +
+                '<br><strong>Probe ASN: </strong>' + JSON.stringify(probes[i]['asn_v4'])+
+                '<br><strong>Probe Country: </strong>'+probes[i]['country_code'])
+                )
 
 choropleth = folium.Choropleth(
     geo_data=probe_geo,
@@ -49,7 +63,9 @@ choropleth.geojson.add_child(
     folium.features.GeoJsonTooltip(['name'],labels=True, aliases=['kommuner: '])
 )
 
+markers.add_child(mc)
+
 folium.LayerControl(collapsed=True).add_to(m)
 
 # To make a new basic html map with the highlighted municipalities
-#m.save('output/map_2.html')
+m.save('output/map_2.html')

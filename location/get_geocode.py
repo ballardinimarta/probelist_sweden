@@ -96,6 +96,7 @@ def get_kommun(status):
         status = {"country_code": "SE"}
         print('loading all probes in sweden...')
 
+    
     filters = status
     probes = ProbeRequest(**filters)
 
@@ -104,6 +105,8 @@ def get_kommun(status):
     for probe in probes:
         coordinatelist.append(probe['geometry']['coordinates'])
         probe_id_list.append(probe['id'])
+
+
     try:
         oslo_probe = probe_id_list.index(3452)
     except ValueError:
@@ -166,10 +169,10 @@ def get_kommun(status):
         print('Antal kommuner : %d/290' % len(kommun_dict))
 
     def dict_print(kommun_dict):
-        print('kommun_dict=')
-        pprint(kommun_dict)
+        print('kommun_dict={}'.format(kommun_dict))
 
     dict_print(kommun_dict)
+    print_nice(kommun_dict)
 
 # get_lan/get_kommun('all') gives you all probes
 # get_lan/get_kommun('connected') gives you all connected probes
@@ -177,4 +180,4 @@ def get_kommun(status):
 # get_lan/get_kommun('abandoned') gives you all abandoned probes
 
 #get_lan('all')# here is where you change
-get_kommun('all')# here is where you change
+get_kommun('active')# here is where you change
