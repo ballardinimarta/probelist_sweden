@@ -91,6 +91,36 @@
             // control that shows state info on hover
             var info = L.control();
 
+            // get probe info from ripe stat api
+             var xhReq = new XMLHttpRequest();
+             xhReq.open("GET", 'https://stat.ripe.net/data/atlas-probes/data.json?resource=SE', false);
+             xhReq.send(null);
+             var jsonObject = JSON.parse(xhReq.responseText)
+             var probes = (jsonObject['data']['probes'])
+
+
+             var conn_probes = [];
+             var disconn_probes = [];
+             var aba_probes = [];
+             for (var i = 0; i < probes.length; i++) {
+               if (probes[i]['status'] == 1){
+                 conn_probes.push(probes);
+               } else if (probes[i]['status'] == 2){
+                 disconn_probes.push(probes);
+               } else if (probes[i]['status'] == 3){
+                 aba_probes.push(probes);
+
+               }
+             }
+
+            var conn_kommuner = [];
+            var geo = kommuner_geojson['features']
+            for (var i = 0; i < geo.length; i++) {
+              if (geo[i]['properties']['probes'] > 0){
+                conn_kommuner.push(kommuner_geojson);
+              }
+            }
+
             info.onAdd = function (map) {
                 this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
                 this.update();
@@ -100,7 +130,10 @@
             // method that we will use to update the control based on feature properties passed
             info.update = function (props) {
                 this._div.innerHTML = '<h4>Svenska kommuner och antalet probes</h4>' +
-                '<h5>Det finns det probes i ' + '83' + '/290 kommuner</h5>' +  (props ?
+                '<h5>Det finns det probes i ' + conn_kommuner['length'] + '/290 kommuner</h5>' +
+                '<h5>Det finns '+ probes['length'] +' probes i sverige,</h5><h5>' +
+                conn_probes['length'] +' anslutna,'+ disconn_probes['length'] +' disconnected,'
+                + aba_probes['length'] + ' abandoned</h5>'+(props ?
                 '<b>' + props.name + '</b><br />' + props.probes + ' (st) probes'
                 : 'Sväva över en kommun ');
               };
@@ -110,13 +143,9 @@
 
             var markers = new L.MarkerClusterGroup();
 
-            // Markers for the probes
-             var xhReq = new XMLHttpRequest();
-             xhReq.open("GET", 'https://stat.ripe.net/data/atlas-probes/data.json?resource=SE', false);
-             xhReq.send(null);
-             var jsonObject = JSON.parse(xhReq.responseText)
-             var probes = (jsonObject['data']['probes'])
 
+
+              // Markers for the probes
 
              var LeafIcon = L.Icon.extend({
               options: {
