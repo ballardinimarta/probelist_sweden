@@ -13,11 +13,11 @@ $ git clone https://github.com/ballardinimarta/probelist_sweden.git
 $ pip install -r requirements.txt
 ```
 ## map.html
-If you like graphics and want to se a map of sweden, with the municipalities with probes highlighted you can either look at the link to the visualisation of my html-file [map.html](https://ballardinimarta.github.io/probelist_sweden/map.html)
+If you like graphics and want to see a map of sweden, with the municipalities with probes highlighted you can either look at the link to the visualisation of my html-file [map.html](https://ballardinimarta.github.io/probelist_sweden/map.html)
 
 or clone my repo and open it in your browser in filemode.
 
-To update the information of the map ie the ripe atlas data, you simply have to run
+To update the information of the map, i.e. the ripe atlas data, you simply have to run
 ```bash
 $ python3 mapdata/create_geojson.py
 ```
