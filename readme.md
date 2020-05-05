@@ -13,7 +13,11 @@ $ git clone https://github.com/ballardinimarta/probelist_sweden.git
 $ pip install -r requirements.txt
 ```
 ## map.html
+<<<<<<< HEAD
 If you like graphics and want to see a map of Sweden, with the municipalities with probes highlighted you can either look at the link to the visualisation of my html-file [map.html](https://ballardinimarta.github.io/probelist_sweden/map.html)
+=======
+If you like graphics and want to see a map of sweden, with the municipalities with probes highlighted you can either look at the link to the visualisation of my html-file [map.html](https://ballardinimarta.github.io/probelist_sweden/map.html)
+>>>>>>> b16f9e4f7af72590673135074eb60d1c828a90c6
 
 or clone my repo and open it in your browser in file-mode.
 
