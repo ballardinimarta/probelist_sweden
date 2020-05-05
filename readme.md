@@ -1,5 +1,5 @@
 # probelist_sweden
-This is a program to find information on the Ripe Atlas probes and anchors that are located in sweden
+This is a program to find information on the Ripe Atlas probes and anchors that are located in Sweden
 https://atlas.ripe.net/results/maps/network-coverage/?filter=Sweden+(se)
 
 ## How to use
@@ -12,6 +12,16 @@ $ git clone https://github.com/ballardinimarta/probelist_sweden.git
 ```bash
 $ pip install -r requirements.txt
 ```
+## map.html
+If you like graphics and want to se a map of sweden, with the municipalities with probes highlighted you can either look at the link to the visualisation of my html-file [map.html](https://ballardinimarta.github.io/probelist_sweden/map.html)
+
+or clone my repo and open it in your browser in filemode.
+
+To update the information of the map ie the ripe atlas data, you simply have to run
+```bash
+$ python3 mapdata/create_geojson.py
+```
+it takes quite a long time to run but after that your data for map.html is updated
 ## get_asn.py
 This script gets you a python dictionary of the ASN correlating to the network provider of that ASN
 (ASN stands for Autonomous System Number).
@@ -73,8 +83,3 @@ You do not have to change anything it is ready to run
 $ python3 location/get_missing.py
 ```
 if you only want to see the output i have a txt file with the output from 23/4-2020 called <b>missinglist.txt</b>you can find it at [location/output](https://github.com/ballardinimarta/probelist_sweden/tree/master/location/output)
-
-## map.py
-If you like graphics and want to se a map of sweden, with the municipalities with probes highlighted you can either look at the link to the visualisation of my html-file https://ballardinimarta.github.io/probelist_sweden/map.html
-
-or run the code locally, either just open the map.html file in your browser locally.
