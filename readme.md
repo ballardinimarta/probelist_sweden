@@ -23,7 +23,7 @@ $ python3 asn/get_asn.py
 ```
 you should get a dictionary with about 119 values.
 
-But if you just want the results i have a txt file called <b>asndict.txt</b> that you can look at.
+But if you just want the results i have a txt file called <b>asndict.txt</b> that you can look at. Find it under [asn/output](https://github.com/ballardinimarta/probelist_sweden/tree/master/asn/output)
 
 asndict.txt is the output of get_asn.py at 21/04 -2020
 
@@ -59,7 +59,7 @@ or
 get_kommun('all')
 ```
 
-i have a txt file called <b>landict.txt</b> or <b>kommundict.txt</b> that you can look at.
+i have a txt file called <b>landict.txt</b> or <b>kommundict.txt</b> that you can look at under [location/output](https://github.com/ballardinimarta/probelist_sweden/tree/master/location/output).
 
 landict.txt is the output of get_geocode.py at 21/04 -2020
 
@@ -72,9 +72,9 @@ You do not have to change anything it is ready to run
 ```bash
 $ python3 location/get_missing.py
 ```
-if you only want to see the output i have a txt file with the output from 23/4-2020 called <b>missinglist.txt</b>
+if you only want to see the output i have a txt file with the output from 23/4-2020 called <b>missinglist.txt</b>you can find it at [location/output](https://github.com/ballardinimarta/probelist_sweden/tree/master/location/output)
 
 ## map.py
-If you like graphics and want to se a map of sweden, with the municipalities with probes highlighted you can either look at the link to the visualisation of my html-file https://ballardinimarta.github.io/probelist_sweden/output/map.html
+If you like graphics and want to se a map of sweden, with the municipalities with probes highlighted you can either look at the link to the visualisation of my html-file https://ballardinimarta.github.io/probelist_sweden/map.html
 
 or run the code locally, either just open the map.html file in your browser locally.
