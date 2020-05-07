@@ -63,7 +63,7 @@
 
 </body>
 <script>
-
+            // Define the map
             var map = L.map("map",
                 {
                     center: [62.99, 17.64],
@@ -73,32 +73,36 @@
                     preferCanvas: false,
                 }
             );
-
+            // add openstreetmap layer
             var tile_layer = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             ).addTo(map);
 
-
+            // add layer for the municipalities
             var choropleth = L.featureGroup(
                 {}
             ).addTo(map);
-
+            // att layer for the probe markers
             var scatter = L.featureGroup(
                   {}
                 ).addTo(map);
 
-            // control that shows state info on hover
+            // control that shows municipality info on hover
             var info = L.control();
 
             // get probe info from ripe stat api
              var xhReq = new XMLHttpRequest();
              xhReq.open("GET", 'https://stat.ripe.net/data/atlas-probes/data.json?resource=SE', false);
              xhReq.send(null);
+             xhReq.onerror = function() { // only triggers if the request couldn't be made at all
+                                          alert(`Network Error`);
+                                        };
              var jsonObject = JSON.parse(xhReq.responseText)
              var probes = (jsonObject['data']['probes'])
 
-
+             // get 3 arrays with the 3 different statuses of the probes
+             // 1 array for connected probes, 1 array for disconnected probes, 1 array for abandoned probes
              var conn_probes = [];
              var disconn_probes = [];
              var aba_probes = [];
@@ -112,7 +116,7 @@
 
                }
              }
-
+            // get 1 array for the municipalities that has connected/disconnected probes
             var conn_kommuner = [];
             var geo = kommuner_geojson['features']
             for (var i = 0; i < geo.length; i++) {
@@ -140,7 +144,7 @@
 
             info.addTo(map);
 
-
+            // make the MarkerCluster
             var markers = new L.MarkerClusterGroup();
 
 
@@ -183,7 +187,7 @@
             }}
             map.addLayer(markers);
 
-
+            // sets the color of the polygons, so green if probes has value other than 0
             function geo_json_styler(feature) {
                 switch(feature.properties.probes) {
                   case "0" :
@@ -194,13 +198,14 @@
             }
 
 
-
+            // highlighter for the polygons
         function geo_json_highlighter(feature) {
             switch(feature.properties.name) {
                 default:
                     return {"fillOpacity": 0.8999999999999999, "weight": 3};
             }
         }
+        // features of the polygons like info and highlight
         function geo_json_onEachFeature(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -221,6 +226,7 @@
 
                 style: geo_json_styler,
         });
+
         function geo_json_add (data) {
             geo_json.addData(data)
                 .addTo(choropleth);
@@ -229,6 +235,7 @@
         var geojsonLayer = [kommuner_geojson]
         geo_json_add(geojsonLayer);
 
+        // tooltip for the polygons with "kommun: xxx, Antal probes: xxx"
         geo_json.bindTooltip(
             function(layer){
             // Convert non-primitive to String.
@@ -295,7 +302,7 @@
         .attr("width", function(d) { return d.x1 - d.x0; })
         .style("fill", function(d) { return d.z; });
 
-
+        // layers panel
     color_map.g.call(color_map.xAxis).append("text")
         .attr("class", "caption")
         .attr("y", 21)
@@ -313,7 +320,7 @@
             L.control.layers(
                 layer_control.base_layers,
                 layer_control.overlays,
-                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+                {"autoZIndex": true, "collapsed": false, "position": "topright", "hideSingleBase" : true}
             ).addTo(map);
 
 
