@@ -12,6 +12,7 @@ $ git clone https://github.com/ballardinimarta/probelist_sweden.git
 ```bash
 $ pip install -r requirements.txt
 ```
+
 ## map.html
 If you like graphics and want to see a map of Sweden, with the municipalities with probes highlighted you can either look at the link to the visualisation of my html-file [map.html](https://ballardinimarta.github.io/probelist_sweden/map.html)
 
@@ -21,7 +22,25 @@ To update the information of the map, i.e. the ripe atlas data, you simply have 
 ```bash
 $ python3 mapdata/create_geojson.py
 ```
-it takes quite a long time to run but after that your data for map.html is updated
+it takes quite a long time to run but after that your data for map.html is updated.
+
+The munucipalities that are highlighted green on the map are the ones that have a connected or temporarily disconnected probes, when you use mouseover you can se how many probes that specific municipality has. You also see all probes located in sweden, and the pins are colorcoded for easy readablity.
+
+- red = abandoned
+- yellow = disconnected
+- green = connected
+
+If you want further information on a specific probe, you can press the pin and a tooltip will appear with information about the
+- probe id
+- probe status
+- asn-v4 number
+- country code
+
+And in your top right corner you have a information panel, with the information such as how many probes that are connected, disconnected or abandoned. You can also see the total ammount of probes in sweden and the number of municipalities that have probes. All the data from this panel is from the Ripe Stat API and is updated in realtime.
+
+Ypu can also choose to onsly see the individual probes and not the municipality polygons or the other way around in the checkbox menu under the info panel.
+
+
 ## get_asn.py
 This script gets you a python dictionary of the ASN correlating to the network provider of that ASN
 (ASN stands for Autonomous System Number).
