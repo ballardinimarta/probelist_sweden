@@ -38,7 +38,7 @@ If you want further information on a specific probe, you can press the pin and a
 
 And in your top right corner you have a information panel, with the information such as how many probes that are connected, disconnected or abandoned. You can also see the total ammount of probes in sweden and the number of municipalities that have probes. All the data from this panel is from the Ripe Stat API and is updated in realtime.
 
-Ypu can also choose to onsly see the individual probes and not the municipality polygons or the other way around in the checkbox menu under the info panel.
+Ypu can also choose to only see the individual probes and not the municipality polygons or the other way around in the checkbox menu under the info panel.
 
 
 ## get_asn.py
